@@ -24,7 +24,7 @@ const riddleData = [
         options: ["A tongue", "A flower", "A chocolate", "A Coffee"],
         answer: "A tongue"
     },
-]
+];
 
 const riddleElement = document.querySelector('.riddle');
 const optionsElements = document.querySelectorAll('.option');
@@ -59,7 +59,6 @@ function handleNextRiddle() {
             score++;
         }
 
-
         setTimeout(() => {
             currentRiddleIndex++;
             if (currentRiddleIndex < riddleData.length) {
@@ -80,7 +79,14 @@ function resetOptions() {
 
 function showResults() {
     const riddleContainer = document.querySelector(".riddle-container");
-    riddleContainer.innerHTML = `<h2>You solved ${score} out of ${riddleData.length} riddles</h2>`;
+    riddleContainer.innerHTML = `
+        <h2>You solved ${score} out of ${riddleData.length} riddles</h2>
+        <button class="restart-btn">Restart Game</button>
+    `;
+
+    document.querySelector(".restart-btn").addEventListener("click", () => {
+        location.reload();
+    });
 }
 
 optionsElements.forEach(option => {
