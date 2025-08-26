@@ -16,7 +16,7 @@ body {
 .riddle-container {
     margin-top: 200px;
     max-width: 500px;
-    width: 500%;
+    width: 100%;
     padding: 20px;
     background-color: #111;
     border: 2px solid #00ff00;
@@ -100,7 +100,7 @@ body {
 }
 
 .option.wrong {
-    background-color: #dc3545; 
+    background-color: #f00;
     color: white;
 }
 
@@ -119,4 +119,6 @@ body {
 .submit-btn:hover {
     background-color: #00cc00;
 }
+
+
 

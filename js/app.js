@@ -44,6 +44,7 @@ let score = 0;
 
 const showRiddle = () => {
     const currentRiddle = riddleData[currentRiddleIndex];
+    riddleElement.textContent = currentRiddle.riddle;
     optionsElements.forEach((option, index)=> {
         option.textContent = currentRiddle.options[index]
         option.classList.remove("selected", "correct", "wrong")
