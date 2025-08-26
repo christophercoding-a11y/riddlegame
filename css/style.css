@@ -1,3 +1,5 @@
+* { box-sizing: border-box;}
+
 body {
     margin: 0;
     padding: 0;
@@ -104,13 +106,14 @@ body {
 
 
 .submit-btn {
-    width: 100%;
-    margin: 20 auto 0;
-    padding: 10px 20px;
+    width: 200px;
+    margin: 20px auto 0;
+    padding: 8px 16px;
     cursor: pointer;
     background-color: #00ff00;
     color: #000;
     border-radius: 5px;
+    display: block;
 }
 
 .submit-btn:hover {
