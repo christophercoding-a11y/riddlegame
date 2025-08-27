@@ -26,9 +26,18 @@ const riddleData = [
     },
 ];
 
+const startBtn = document.querySelector(".start-btn");
+const startScreen = document.querySelector(".start-screen");
 const riddleElement = document.querySelector('.riddle');
+const riddleContainer = document.querySelector(".riddle-container");
 const optionsElements = document.querySelectorAll('.option');
 const submitBtn = document.querySelector(".submit-btn");
+
+startBtn.addEventListener("click", () => {
+    startScreen.style.display = "none";
+    riddleContainer.style.display = "block";
+    showRiddle();
+});
 
 let currentRiddleIndex = 0;
 let score = 0;
@@ -137,7 +146,7 @@ const showResults = () => {
     const riddleContainer = document.querySelector(".riddle-container");
     riddleContainer.innerHTML = `
         <h2>You solved ${score} out of ${riddleData.length} riddles</h2>
-        <button class="restart-btn">Restart Game</button>
+        <button class="restart-btn">Back to Start</button>
     `;
 
     document.querySelector(".restart-btn").addEventListener("click", () => {
@@ -154,4 +163,4 @@ optionsElements.forEach(option => {
 
 submitBtn.addEventListener("click", handleNextRiddle);
 
-showRiddle();
+// showRiddle();

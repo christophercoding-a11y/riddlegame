@@ -7,7 +7,11 @@
     <title>Riddle Game</title>
 </head>
 <body>
-    <div class="riddle-container">
+    <div class="start-screen">
+        <h1 class="start-title">Welcome to the Riddle Game</h1>
+        <button class="start-btn">Start Game</button>
+    </div>
+    <div class="riddle-container" style="display: none;">
         <h1 class="riddle-title">Riddle me this!</h1>
         <div class="container riddle-content">
             <h3 class="riddle">Riddle goes here...</h3>
@@ -18,7 +22,7 @@
                 <li class="option">4</li>
             </ul>
         </div>
-        <button class="submit-btn btn-primary">Next Riddle</button>
+        <button class="submit-btn">Submit Answer</button>
     </div>
     
     <script src="js/app.js"></script>

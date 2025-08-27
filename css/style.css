@@ -13,6 +13,33 @@ body {
     background-size: 20px 20px;
 }
 
+.start-screen {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.start-title {
+    font-size: 28px;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.start-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff00;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn:hover {
+    background-color: #00cc00;
+}
+
 .riddle-container {
     margin-top: 200px;
     max-width: 500px;
@@ -56,9 +83,8 @@ body {
 }
 
 .riddle-content {
-    margin-top: 20px;
+    margin: 20px auto 0;
     width: 100%;
-    margin: 0 auto;
     transition: opacity 0.3s ease;
 }
 
